@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="DesignsByChip" content="Charles White UI work samples">
+  <title>About Charles White, UX/UI Designer</title>
+</head>
+
+<body>
+
+  <!-- For the header -->
+  <header>
+    <div><a href="index.html"><img src="img/charles_white_logo_b.png" alt="Charles Whites logo"></a></div>
+    <nav>
+      <!--top level navigation-->
+      <ul>
+        <li><a href="index.html">Work</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <!--End top level navigation-->
+
+  </header>
+
+
+  <!-- For the hero section -->
+  <div>
+    <div>
+      <h1>Charles White</h1>
+      <span>UI/UX Designer from Fall Church, VA</span>
+      <p>I am a UI/UX designer proficient in Sketch, Adobe XD, InVision and Flinto as well as HTML, CSS and some JavaScript.</p>
+    </div>
+
+  </div>
+
+  <div>
+    <!-- For your About section -->
+
+    <div>
+      <!-- top container block -->
+
+      <div>
+        <h1>About</h1>
+      </div>
+
+    </div><!-- End top container block -->
+
+
+
+    <div>
+      <!-- Bottom container block -->
+
+
+
+        <div class="row">
+          <!--open row that holds 1 column for a picture-->
+
+          <div class="column">
+            <picture>
+              <source srcset="img/Chip_profile1@1x.jpg" media="(max-width:767px)">
+              <img src="img/Chip_profile1@2x.jpg" alt="profile picture of Charles White">
+            </picture>
+          </div>
+        </div>
+          <!--End row one column column-->
+
+          <div class="row">
+            <!--open row that holds 2 columns for a project-->
+
+            <div class="column">
+              <!--Open 1st column used for text-->
+              <div>
+                <h2>My Story</h2>
+                <p>MUI/UX designer with a certification in UI design from Career Foundry, and a degree in
+                  Graphic Design from The University of Maryland at College Park.</p>
+                <p>My experience includes graphic design for magazines, major newspapers and commercial printers. I am proficient with the Adobe Creative Suite as well as a variety of applications used by the printing industry.</p>
+                <p>As a recent graduate of the Career Foundry UI design course, I proudly say that I am also proficient with Sketch, Adobe XD, InVision and Flinto as well as HTML, CSS and some JavaScript.</p>
+              </div>
+
+              <div><a href="files/Charles_White_Resume.pdf" download>
+                  <h5>Download My Resume</h5>
+                </a></div>
+
+            </div>
+            <!--End first column-->
+
+            <div class="column">
+              <!--Open 2nd column used for text-->
+              <div>
+                <h2>Skills and tools</h2>
+              </div>
+
+              <div>
+                <!-- Skills Column -->
+                <h3>Relevant Skills</h3>
+
+                <ul>
+                  <!-- list of skills -->
+
+                  <li>
+                    <p>Illustrator</p>
+                  </li>
+                  <li>
+                    <p>Photoshop</p>
+                  </li>
+                  <li>
+                    <p>Sketch</p>
+                  </li>
+                  <li>
+                    <p> InVision</p>
+                  </li>
+                  <li>
+                    <p>Placeit.Net</p>
+                  </li>
+                  <li>
+                    <p>Canva.com</p>
+                  </li>
+                </ul>
+              </div>
+              <!-- End list of skills Column -->
+
+              <div>
+                <!-- Tools column -->
+                <h3>Relevant Tools</h3>
+                <ul>
+                  <!-- list of tools -->
+                  <li>
+                    <p>Illustrator</p>
+                  </li>
+                  <li>
+                    <p>Photoshop</p>
+                  </li>
+                  <li>
+                    <p>Sketch</p>
+                  </li>
+                  <li>
+                    <p> InVision</p>
+                  </li>
+                  <li>
+                    <p>Placeit.Net</p>
+                  </li>
+                  <li>
+                    <p>Canva.com</p>
+                  </li>
+                </ul><!-- End list of tools -->
+
+              </div><!-- End of tools column -->
+
+            </div>
+            <!--end second column-->
+
+          </div>
+          <!--End row that holds 2 columns -->
+
+
+      </div><!-- End Bottom container block -->
+
+
+    </div><!-- End of About Section -->
+
+
+
+
+
+</body>
+
+</html>
