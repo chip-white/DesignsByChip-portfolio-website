@@ -1,0 +1,128 @@
+/*
+
+Primary Blue (Dark Blue): #0F4C81;
+Secondary Blue (Medium Blue): #638CC7;
+Baby Blue: #B6CADA;
+Monument Gray: #84898C;
+Stucco Brown: A48D7F;
+
+*/
+
+
+img {
+  width: 100%;
+}
+
+/* Box-Sizing: Border Box using the Universal selector */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* Social Media logos */
+svg {
+  position: relative;
+  width: 32px;
+}
+
+/* links */
+a {
+  color: #0F4C81;
+  text-decoration: none;
+  /* no underlining */
+}
+
+a:visited {
+  color: #0F4C81;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #638CC7;
+  text-decoration: none;
+}
+
+a:active {
+  color: #84898C;
+  text-decoration: none;
+}
+
+
+
+
+
+body {
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 3rem 0 1.38rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #0F4C81;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 2.488rem;
+}
+
+h2 {
+  font-size: 2.074rem;
+}
+
+h3 {
+  font-size: 1.728rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+small, .text_small {
+  font-size: 0.833rem;
+}
+
+/* button styles for viewing prototypes */
+.button.prototype {
+  display: inline-block;
+  background-color: #0F4C81;
+  color: #ffffff; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 6px;
+  border-bottom: 2px solid #B6CADA; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button.prototype:hover {
+  opacity: 0.8; /* reduces the opacity of the button to 80 % */
+}
+
+
+/* Layout Styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
