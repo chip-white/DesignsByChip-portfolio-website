@@ -7,35 +7,97 @@ Monument Gray: #84898C;
 Stucco Brown: #A48D7F;
 
 */
+/* Box-Sizing: Border Box using the Universal selector */
+* {
+  box-sizing: border-box;
+}
 
+#about img {
+  display: block;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 img {
   width: 100%;
 }
 
-/* Box-Sizing: Border Box using the Universal selector */
 
-* {
-  box-sizing: border-box;
+#hero h1, h4, p {
+  text-align: center;
+  line-height: 1.3;
 }
 
+
+#hero {
+  background-color: #0F4C81;
+  padding: 100px;
+}
+
+#about h1 {
+  text-align: center;
+}
+
+#about p {
+  text-align: left;
+}
+
+#work p {
+  text-align: left;
+}
+
+#work h2 {
+  text-align: center;
+}
+
+#work h3 {
+  text-align: center;
+}
+
+
+#casestudy p {
+  text-align: left;
+}
+
+#casestudy h2, h3, h4, h5 {
+  text-align: center;
+}
+
+
+#casestudy .button {
+  text-align: center;
+}
+
+#contact p {
+  text-align: center;
+}
+
+#contact h2 {
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+}
 
 /* Social Media logos */
 svg {
   position: relative;
   width: 32px;
+  height: auto;
 }
 
 /* links */
 a {
   color: #0F4C81;
   text-decoration: none;
+  text-align: center;
   /* no underlining */
 }
 
 /* link styling hierarchy must be visited, hover and then active and then psuedo classes. focus is for people using keyboards, not a mouse */
 /* make visited a different color than active so people know they clicked on it */
-
 a:visited {
   color: #A48D7F;
   text-decoration: none;
@@ -52,10 +114,6 @@ a:active {
   text-decoration: none;
 }
 
-
-
-
-
 body {
   background-color: #ffffff;
   font-family: 'Source Sans Pro', sans-serif;
@@ -69,7 +127,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 3rem 0 1.38rem;
+  margin: 3rem 0 0rem;
   font-family: 'Montserrat', sans-serif;
   color: #0F4C81;
   font-weight: 700;
@@ -103,95 +161,110 @@ small, .text_small {
 
 /* button styles for viewing prototypes */
 .button {
-  display: inline-block;
+  display: block;
   background-color: #0F4C81;
-  color: #ffffff; /* needed to override the default link color */
+  color: #ffffff;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
   border-radius: 6px;
-  border-bottom: 2px solid #B6CADA; /* width of the border, type, color */
+  border-bottom: 2px solid #B6CADA;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:visited {
   background-color: #A48D7F;
   color: #ffffff;
-  opacity: 0.8; /* reduces the opacity of the button to 80 % */
+  opacity: 0.8;
+  /* reduces the opacity of the button to 80 % */
 }
 
 .button:hover {
-  opacity: 0.8; /* reduces the opacity of the button to 80 % */
+  opacity: 0.8;
+  /* reduces the opacity of the button to 80 % */
 }
 
 .button:active {
-  opacity: 0.6; /* reduces the opacity of the button to 60 % when active */
+  opacity: 0.6;
+  /* reduces the opacity of the button to 60 % when active */
 }
 
 /* Email me button */
-
 .btnemail {
   display: inline-block;
   background-color: transparent;
-  color: #0F4C81; /* needed to override the default link color */
+  color: #0F4C81;
+  /* needed to override the default link color */
   font-weight: 400;
   padding: 4px;
   border-radius: 4px;
-  border: 4px solid #0F4C81; /* width of the border, type, color */
+  border: 4px solid #0F4C81;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .btnemail:visited {
   background-color: #A48D7F;
-  color: #ffffff; /* needed to override the default link color */
-  opacity: 0.8; /* reduces the opacity of the button to 80 % */
+  color: #ffffff;
+  /* needed to override the default link color */
+  opacity: 0.8;
+  /* reduces the opacity of the button to 80 % */
 }
 
 .btnemail:hover {
   background-color: #0F4C81;
-  color: #ffffff; /* needed to override the default link color */
-  opacity: 0.8; /* reduces the opacity of the button to 80 % */
+  color: #ffffff;
+  /* needed to override the default link color */
+  opacity: 0.8;
+  /* reduces the opacity of the button to 80 % */
 }
 
 .btnemail:active {
-  opacity: 0.6; /* reduces the opacity of the button to 60 % when active */
+  opacity: 0.6;
+  /* reduces the opacity of the button to 60 % when active */
 }
 
-
 /* Download my Resume button */
-
 .btnresume {
   display: inline-block;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   background-color: transparent;
-  color: #0F4C81; /* needed to override the default link color */
+  color: #0F4C81;
+  /* needed to override the default link color */
   padding: 6px;
   border-radius: 6px;
-  border: 2px solid #0F4C81; /* width of the border, type, color */
+  border: 2px solid #0F4C81;
+  /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .btnresume:visited {
   background-color: #A48D7F;
-  color: #ffffff; /* needed to override the default link color */
-  opacity: 0.8; /* reduces the opacity of the button to 80 % */
+  color: #ffffff;
+  /* needed to override the default link color */
+  opacity: 0.8;
+  /* reduces the opacity of the button to 80 % */
 }
 
 .btnresume:hover {
   background-color: #0F4C81;
-  color: #ffffff; /* needed to override the default link color */
-  opacity: 0.8; /* reduces the opacity of the button to 80 % */
+  color: #ffffff;
+  /* needed to override the default link color */
+  opacity: 0.8;
+  /* reduces the opacity of the button to 80 % */
 }
 
 .btnresume:active {
-  opacity: 0.6; /* reduces the opacity of the button to 60 % when active */
+  opacity: 0.6;
+  /* reduces the opacity of the button to 60 % when active */
 }
 
-
-
-
 /* Layout Styling */
-
 .container {
   padding: 0 15px;
 }
@@ -199,4 +272,66 @@ small, .text_small {
 .column {
   float: left;
   width: 50%;
+}
+
+.row {
+  margin: 25px 0;
+  margin-bottom: 10px;
+}
+
+.column {
+  margin-bottom: 10px;
+}
+
+header {
+  position: relative;
+  -webkit-box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.logo {
+  max-width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+nav>ul {
+  display: inline-block;
+  margin: 10px auto;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: 700;
+  color: #4a4a4a;
+}
+
+nav>ul>li>a:visited. {
+  color: #A48D7F;
+}
+
+nav>ul>li>a:hover. {
+  color: #638CC7;
+}
+
+nav>ul>li>a:active. {
+  color: #84898C;
+}
+
+.center {
+  text-align: center;
+  margin: auto;
 }
