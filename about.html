@@ -21,9 +21,12 @@
 
   <!-- For the header -->
   <header>
-    <!-- Opens header container -->
-    <div class="logo"><a href="index.html"><img src="img/charles_white_logo_b.png" alt="Charles Whites logo"></a>
-    </div>
+
+    <div class="container">
+      <!-- Opens header container -->
+
+      <div class="logo"><a href="index.html"><img src="img/charles_white_logo_b.png" alt="Charles Whites logo"></a>
+      </div>
 
       <nav>
         <!--top level navigation-->
@@ -34,6 +37,7 @@
         </ul>
       </nav>
       <!--End top level navigation-->
+    </div><!-- closes Header container -->
 
   </header>
 
@@ -43,11 +47,16 @@
     <div id="hero">
       <!-- For the hero section -->
 
-      <div>
-        <h1 style="color: #ffffff;">Charles White</h1>
-        <h4 style="color: #ffffff;">UI/UX Designer from Fall Church, VA</h4>
-        <p style="color: #ffffff;">I am a UI/UX designer proficient in Sketch, Adobe XD, InVision and Flinto as well as HTML, CSS and some JavaScript.</p>
-      </div>
+      <div class="container">
+        <!-- Opens container for Hero Section -->
+
+        <div>
+          <h1 style="color: #ffffff;">Hi, I'm Charles White</h1>
+          <h4 style="color: #ffffff;">UI/UX Designer from Fall Church, VA</h4>
+          <p style="color: #ffffff;">I am a UI/UX designer proficient in Sketch, Adobe XD, InVision and Flinto as well as HTML, CSS and some JavaScript.</p>
+        </div>
+
+      </div><!-- Closes Container for Hero Section -->
 
     </div><!-- End hero section -->
 
@@ -55,63 +64,46 @@
     <div id="about">
       <!-- Opens About section -->
 
-      <div>
-        <!-- About Me top section -->
-
-        <h1>About Me</h1>
-
-      </div><!-- End About Me top section -->
-
-
-
       <div class="container">
-        <!-- About Me Bottom container block -->
-
+        <!-- Opens Conmtainer for About Section -->
 
         <div>
-          <!--open row that holds 1 column for a picture-->
+          <!-- About Me top section -->
+
+          <h1 style="margin-top: 1rem;">About Me</h1>
+
+        </div><!-- End About Me top section -->
+
+
+<div class="row"><!-- Open Row for About Me Section Columns-->
+
+
+        <div class="column col-md-6 col-lg-7"><!-- Open Picture and description column -->
 
           <picture>
             <source srcset="img/Chip_profile1@1x.jpg" media="(max-width:767px)">
             <img src="img/Chip_profile1@2x.jpg" alt="profile picture of Charles White">
           </picture>
 
-        </div>
-        <!--End row one column for a picture -->
 
-
-
-        <div class="row">
-          <!--open row that holds 2 columns for About Me text-->
-
-
-          <div class="column">
-            <!--Open 1st column used for My Story text-->
-
-            <div>
-              <h2>My Story</h2>
-              <p>UI/UX designer with a certification in UI design from Career Foundry, and a degree in
-                Graphic Design from The University of Maryland at College Park.</p>
-              <p>My experience includes graphic design for magazines, major newspapers and commercial printers. I am proficient with the Adobe Creative Suite as well as a variety of applications used by the printing industry.</p>
-              <p>As a recent graduate of the Career Foundry UI design course, I proudly say that I am also proficient with Sketch, Adobe XD, InVision and Flinto as well as HTML, CSS and some JavaScript.</p>
-            </div>
-
-            <div class="btnresume"><a href="files/Charles_White_Resume.pdf" download target="_blank">Download My Resume</a>
-            </div>
-
+          <div>
+            <h2>My Story</h2>
+            <p>UI/UX designer with a certification in UI design from Career Foundry, and a degree in
+              Graphic Design from The University of Maryland at College Park.</p>
+            <p>My experience includes graphic design for magazines, major newspapers and commercial printers. I am proficient with the Adobe Creative Suite as well as a variety of applications used by the printing industry.</p>
+            <p>As a recent graduate of the Career Foundry UI design course, I proudly say that I am also proficient with Sketch, Adobe XD, InVision and Flinto as well as HTML, CSS and some JavaScript.</p>
           </div>
-          <!--End first column-->
+
+          <a href="files/Charles_White_Resume.pdf" download target="_blank" class="btnresume">Download My Resume</a>
+
+          </div><!--Close Picture and description column -->
 
 
-          <div class="column">
-            <!--Open 2nd column used for Skills and tools text-->
-            <div>
-              <h2>Skills and tools</h2>
-            </div>
+          <div class="column col-md-6 col-lg-5"><!-- Opens colums for skills and tools -->
 
-            <div>
-              <!-- Skills Column -->
-              <h3>Relevant Skills</h3>
+              <h3>Skills and tools</h3>
+
+              <h4>Relevant Skills</h4>
 
               <ul>
                 <!-- list of skills -->
@@ -135,12 +127,8 @@
                   <p>Canva.com</p>
                 </li>
               </ul>
-            </div>
-            <!-- End list of skills Column -->
 
-            <div>
-              <!-- Tools column -->
-              <h3>Relevant Tools</h3>
+              <h4>Relevant Tools</h4>
               <ul>
                 <!-- list of tools -->
                 <li>
@@ -163,17 +151,14 @@
                 </li>
               </ul><!-- End list of tools -->
 
-            </div><!-- End of tools column -->
-
-
           </div>
-          <!--end Skilss and tools column-->
+          <!--end of skills and tools column-->
 
         </div>
-        <!--End row that holds two columns for About me text -->
+        <!--End About me row with columns -->
 
 
-      </div><!-- About Me End Bottom container block -->
+      </div><!-- Closes Container for About Section -->
 
 
     </div><!-- Closes About Section -->
@@ -195,7 +180,7 @@
 
           <!--Social Media icons layout-->
 
-          <div class="column">
+          <div class="column col-md-1 col-lg-1">
             <!-- Column for linkedin logo -->
             <div> <a href="https://www.linkedin.com/in/charles-chip-white-27056516/" target="_blank">
                 <!-- LinkedIn icon -->
@@ -220,7 +205,7 @@
             </div>
           </div><!-- Closed column for Linkedin logo -->
 
-          <div class="column">
+          <div class="column col-md-1 col-lg-1">
             <!-- Opens column for Behance logo -->
 
             <div> <a href="https://www.behance.net/chipwhite" target="_blank">

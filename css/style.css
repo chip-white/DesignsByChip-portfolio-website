@@ -12,6 +12,10 @@ Stucco Brown: #A48D7F;
   box-sizing: border-box;
 }
 
+header {
+  text-align: center;
+}
+
 #about img {
   display: block;
   width: 50%;
@@ -23,12 +27,10 @@ img {
   width: 100%;
 }
 
-
 #hero h1, h4, p {
   text-align: center;
   line-height: 1.3;
 }
-
 
 #hero {
   background-color: #0F4C81;
@@ -55,6 +57,10 @@ img {
   text-align: center;
 }
 
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
 
 #casestudy p {
   text-align: left;
@@ -63,7 +69,6 @@ img {
 #casestudy h2, h3, h4, h5 {
   text-align: center;
 }
-
 
 #casestudy .button {
   text-align: center;
@@ -77,8 +82,12 @@ img {
   text-align: center;
 }
 
-#contact {
+#contact a {
   text-align: center;
+}
+
+#contact .column {
+  float: left;
 }
 
 /* Social Media logos */
@@ -132,6 +141,7 @@ h1, h2, h3, h4, h5 {
   color: #0F4C81;
   font-weight: 700;
   line-height: 1.3;
+  text-align: center;
 }
 
 h1 {
@@ -269,18 +279,9 @@ small, .text_small {
   padding: 0 15px;
 }
 
-.column {
-  float: left;
-  width: 50%;
-}
-
 .row {
   margin: 25px 0;
-  margin-bottom: 10px;
-}
-
-.column {
-  margin-bottom: 10px;
+  /* 25px top and bottom, 0 left and right */
 }
 
 header {
@@ -292,10 +293,9 @@ header {
 
 .logo {
   max-width: 350px;
-  display: block;
+  display: inline-block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
 }
 
 nav>ul {
@@ -334,4 +334,159 @@ nav>ul>li>a:active. {
 .center {
   text-align: center;
   margin: auto;
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.waterfront-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414
+  }
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+#hero h4 {
+  margin-top: 1rem;
+}
+
+#work h3 {
+  margin-top: 1rem;
+}
+
+#about h2, h4 {
+  margin-top: 1rem;
+}
+
+
+waterfront-illustration {
+  width: 70%;
+  max-width: 70%;
+  height: auto;
+}
+
+
+/* Code for Screen Break Points */
+
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 28px
+  }
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+
+
+/* ==============================
+Large devices (1024px and larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+  .col-md-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+}
+
+/* ==============================
+Extra Large devices (1440px and larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
