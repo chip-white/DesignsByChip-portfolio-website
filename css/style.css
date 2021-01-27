@@ -12,10 +12,6 @@ Stucco Brown: #A48D7F;
   box-sizing: border-box;
 }
 
-header {
-  text-align: center;
-}
-
 #about img {
   display: block;
   width: 50%;
@@ -286,35 +282,25 @@ small, .text_small {
 
 header {
   position: relative;
+  padding: 10px 0 4px;
   -webkit-box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
   -moz-box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
   box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
 .logo {
-  max-width: 350px;
-  display: inline-block;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 150px;
 }
 
 nav>ul {
-  display: inline-block;
-  margin: 10px auto;
-  width: 100%;
-  text-align: center;
+  margin: 0px;
   list-style-type: none;
   padding: 0;
-}
-
-nav>ul>li {
-  display: inline-block;
 }
 
 nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
-  width: 100%;
   font-weight: 700;
   color: #4a4a4a;
 }
@@ -331,6 +317,45 @@ nav>ul>li>a:active {
   color: #84898C;
 }
 
+/* Navigation Toggle Section */
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  padding-right: 0;
+  font-size: 20px;
+}
+
+.navtoggle.responsive li {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+
+
+
+/* End Navigation toggle section */
 .center {
   text-align: center;
   margin: auto;
@@ -406,17 +431,13 @@ nav>ul>li>a:active {
   margin-top: 1rem;
 }
 
-
 waterfront-illustration {
   width: 70%;
   max-width: 70%;
   height: auto;
 }
 
-
 /* Code for Screen Break Points */
-
-
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -430,6 +451,18 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 28px
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
   }
 
   .col-md-1 {
@@ -454,14 +487,30 @@ Medium devices (640px and larger)
     clear: both;
     display: table;
   }
+
+  .logo {
+    max-width: 350px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
-
-
 
 /* ==============================
 Large devices (1024px and larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
 
   .col-md-1 {
     width: 8.33%;
@@ -478,14 +527,40 @@ Large devices (1024px and larger)
   .col-lg-7 {
     width: 58.33%;
   }
+
+  .logo {
+    max-width: 350px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 /* ==============================
 Extra Large devices (1440px and larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
+  nav>ul>li {
+    display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
   .container {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .logo {
+    max-width: 350px;
+    display: inline-block;
     margin-left: auto;
     margin-right: auto;
   }
