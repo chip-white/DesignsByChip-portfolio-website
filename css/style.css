@@ -171,7 +171,7 @@ small, .text_small {
   background-color: #0F4C81;
   color: #ffffff;
   /* needed to override the default link color */
-  font-weight: 400;
+  font-weight: 700;
   padding: 10px;
   width: 40%;
   margin-left: 30%;
@@ -457,6 +457,19 @@ Medium devices (640px and larger)
     display: inline-block;
   }
 
+
+/* fix */
+  .navtoggle.responsive nav {
+    padding: 0 0 0 0;
+  }
+
+  .navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 0px;
+  }
+
+
   .navtoggle li:not(:last-child) {
     display: inline-block;
   }
@@ -464,6 +477,8 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
+
+
 
   .col-md-1 {
     width: 8.33%;
@@ -512,6 +527,8 @@ Large devices (1024px and larger)
     display: none;
   }
 
+
+
   .col-md-1 {
     width: 8.33%;
   }
@@ -551,6 +568,8 @@ Extra Large devices (1440px and larger)
   .navtoggle li:last-child {
     display: none;
   }
+
+
 
   .container {
     max-width: 1200px;
