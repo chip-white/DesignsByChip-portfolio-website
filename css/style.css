@@ -179,6 +179,7 @@ small,
 
   /* width of the border, type, color */
   transition: 0.2s opacity;
+  margin-bottom: 10px;
 }
 
 .button:visited {
