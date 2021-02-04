@@ -4,9 +4,10 @@ Primary Blue (Dark Blue): #0F4C81;
 Secondary Blue (Medium Blue): #638CC7;
 Baby Blue: #B6CADA;
 Monument Gray: #84898C;
-Stucco Brown: #A48D7F;
+Dark Gray: #242424;
 
 */
+
 /* Box-Sizing: Border Box using the Universal selector */
 * {
   box-sizing: border-box;
@@ -29,7 +30,7 @@ img {
 }
 
 #hero {
-  background-color: #0F4C81;
+  background-color: #0f4c81;
   padding: 100px;
 }
 
@@ -55,15 +56,11 @@ img {
 
 #work .row {
   padding-bottom: 25px;
-  border-bottom: 1px solid #4a4a4a;
+  border-bottom: 1px solid #0f4c81;
 }
 
 #casestudy p {
   text-align: left;
-}
-
-#casestudy h2, h3, h4, h5 {
-  text-align: center;
 }
 
 #casestudy .button {
@@ -95,32 +92,32 @@ svg {
 
 /* links */
 a {
-  color: #0F4C81;
+  color: #0f4c81;
   text-decoration: none;
   text-align: center;
-  /* no underlining */
 }
 
 /* link styling hierarchy must be visited, hover and then active and then psuedo classes. focus is for people using keyboards, not a mouse */
+
 /* make visited a different color than active so people know they clicked on it */
 a:visited {
-  color: #A48D7F;
+  color: #242424;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #638CC7;
+  color: #638cc7;
   text-decoration: none;
 }
 
 a:active {
-  color: #84898C;
+  color: #84898c;
   text-decoration: none;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #fff;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -132,11 +129,10 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  margin: 3rem 0 0rem;
+  margin: 3rem 0 0;
   font-family: 'Montserrat', sans-serif;
-  color: #0F4C81;
+  color: #0f4c81;
   font-weight: 700;
-  line-height: 1.3;
   text-align: center;
 }
 
@@ -161,15 +157,17 @@ h5 {
   font-size: 1.2rem;
 }
 
-small, .text_small {
+small,
+.text_small {
   font-size: 0.833rem;
 }
 
 /* button styles for viewing prototypes */
 .button {
   display: block;
-  background-color: #0F4C81;
-  color: #ffffff;
+  background-color: #0f4c81;
+  color: #fff;
+
   /* needed to override the default link color */
   font-weight: 700;
   padding: 10px;
@@ -177,25 +175,29 @@ small, .text_small {
   margin-left: 30%;
   margin-right: 30%;
   border-radius: 6px;
-  border-bottom: 2px solid #B6CADA;
+  border-bottom: 2px solid #b6cada;
+
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .button:visited {
-  background-color: #A48D7F;
-  color: #ffffff;
+  background-color: #242424;
+  color: #fff;
   opacity: 0.8;
+
   /* reduces the opacity of the button to 80 % */
 }
 
 .button:hover {
   opacity: 0.8;
+
   /* reduces the opacity of the button to 80 % */
 }
 
 .button:active {
   opacity: 0.6;
+
   /* reduces the opacity of the button to 60 % when active */
 }
 
@@ -203,34 +205,41 @@ small, .text_small {
 .btnemail {
   display: inline-block;
   background-color: transparent;
-  color: #0F4C81;
+  color: #0f4c81;
+
   /* needed to override the default link color */
   font-weight: 400;
   padding: 4px;
   border-radius: 4px;
-  border: 4px solid #0F4C81;
+  border: 4px solid #0f4c81;
+
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .btnemail:visited {
-  background-color: #A48D7F;
-  color: #ffffff;
+  background-color: #242424;
+  color: #fff;
+
   /* needed to override the default link color */
   opacity: 0.8;
+
   /* reduces the opacity of the button to 80 % */
 }
 
 .btnemail:hover {
-  background-color: #0F4C81;
-  color: #ffffff;
+  background-color: #0f4c81;
+  color: #fff;
+
   /* needed to override the default link color */
   opacity: 0.8;
+
   /* reduces the opacity of the button to 80 % */
 }
 
 .btnemail:active {
   opacity: 0.6;
+
   /* reduces the opacity of the button to 60 % when active */
 }
 
@@ -240,33 +249,36 @@ small, .text_small {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   background-color: transparent;
-  color: #0F4C81;
-  /* needed to override the default link color */
+  color: #0f4c81;
   padding: 6px;
   border-radius: 6px;
-  border: 2px solid #0F4C81;
+  border: 2px solid #0f4c81;
+
   /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
 .btnresume:visited {
-  background-color: #A48D7F;
-  color: #ffffff;
+  background-color: #fff;
+  color: #242424;
+
   /* needed to override the default link color */
   opacity: 0.8;
-  /* reduces the opacity of the button to 80 % */
 }
 
 .btnresume:hover {
-  background-color: #0F4C81;
-  color: #ffffff;
+  background-color: #0f4c81;
+  color: #fff;
+
   /* needed to override the default link color */
   opacity: 0.8;
-  /* reduces the opacity of the button to 80 % */
+
+  /* reduces the opacity of the button to 80 % when active */
 }
 
 .btnresume:active {
   opacity: 0.6;
+
   /* reduces the opacity of the button to 60 % when active */
 }
 
@@ -277,44 +289,45 @@ small, .text_small {
 
 .row {
   margin: 25px 0;
+
   /* 25px top and bottom, 0 left and right */
 }
 
 header {
   position: relative;
   padding: 10px 0 4px;
-  -webkit-box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
-  -moz-box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
-  box-shadow: 0px 6px 5px 0px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 0 6px 5px 0 rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0 6px 5px 0 rgba(50, 50, 50, 0.75);
+  box-shadow: 0 6px 5px 0 rgba(50, 50, 50, 0.75);
 }
 
 .logo {
   max-width: 150px;
 }
 
-nav>ul {
-  margin: 0px;
+nav > ul {
+  margin: 0;
   list-style-type: none;
   padding: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #0f4c81;
 }
 
-nav>ul>li>a:visited {
-  color: #A48D7F;
+nav > ul > li > a:visited {
+  color: #242424;
 }
 
-nav>ul>li>a:hover {
-  color: #638CC7;
+nav > ul > li > a:hover {
+  color: #638cc7;
 }
 
-nav>ul>li>a:active {
-  color: #84898C;
+nav > ul > li > a:active {
+  color: #84898c;
 }
 
 /* Navigation Toggle Section */
@@ -322,7 +335,8 @@ nav>ul>li>a:active {
   display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -352,9 +366,6 @@ nav>ul>li>a:active {
   padding: 0 0 10px;
 }
 
-
-
-
 /* End Navigation toggle section */
 .center {
   text-align: center;
@@ -379,7 +390,7 @@ nav>ul>li>a:active {
   }
 
   to {
-    fill: #f76414
+    fill: #f76414;
   }
 }
 
@@ -431,13 +442,8 @@ nav>ul>li>a:active {
   margin-top: 1rem;
 }
 
-waterfront-illustration {
-  width: 70%;
-  max-width: 70%;
-  height: auto;
-}
-
 /* Code for Screen Break Points */
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -450,25 +456,23 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin-top: 28px
+    margin-top: 28px;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
-
-/* fix */
+  /* fix for navbar */
   .navtoggle.responsive nav {
-    padding: 0 0 0 0;
+    padding: 0;
   }
 
   .navtoggle.responsive li {
     display: block;
     padding: 10px 0;
-    border-top: 0px;
+    border-top: 0;
   }
-
 
   .navtoggle li:not(:last-child) {
     display: inline-block;
@@ -477,8 +481,6 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-
-
 
   .col-md-1 {
     width: 8.33%;
@@ -515,7 +517,7 @@ Medium devices (640px and larger)
 Large devices (1024px and larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -526,8 +528,6 @@ Large devices (1024px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-
-
 
   .col-md-1 {
     width: 8.33%;
@@ -557,7 +557,7 @@ Large devices (1024px and larger)
 Extra Large devices (1440px and larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -568,8 +568,6 @@ Extra Large devices (1440px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-
-
 
   .container {
     max-width: 1200px;
