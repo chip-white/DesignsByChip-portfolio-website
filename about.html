@@ -32,12 +32,13 @@
         <!-- Opens Nav Toggle -->
 
 
-        <img class="logo" src="img/charles_white_logo_b.png" alt="Charles Whites logo">
+        <a href="index.html"><img class="logo" src="img/charles_white_logo_b.png" alt="Charles Whites logo"></a>
 
 
         <nav>
           <!--top level navigation-->
           <ul>
+            <li><a href="#resume">Resume</a></li>
             <li><a href="index.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
@@ -107,7 +108,9 @@
               <p>As a recent graduate of the Career Foundry UI design course, I proudly say that I am also proficient with Sketch, Adobe XD, InVision and Flinto as well as HTML, CSS and some JavaScript.</p>
             </div>
 
-            <a href="files/Charles_White_Resume.pdf" download target="_blank" class="btnresume">Download My Resume</a>
+
+            <div id="resume"><a href="files/Charles_White_Resume.pdf" download target="_blank" class="btnresume">Download My Resume</a></div>
+
 
           </div>
           <!--Close Picture and description column -->
@@ -190,12 +193,16 @@
           <p>to contact me, call <a href="tel:+8182742176">818.274.2176</a> or <a href="mailto:chipwhiteva@gmail.com" class="btnemail">email me</a></p>
         </div>
 
-        <div class="row">
+        <div class="row" style="
+        text-align: center;
+        ">
           <!-- Opens row for Social media icons -->
 
           <!--Social Media icons layout-->
 
-          <div class="column col-md-1 col-lg-1">
+          <div style="
+          display: inline-block;
+          ">
             <!-- Column for linkedin logo -->
             <div> <a href="https://www.linkedin.com/in/charles-chip-white-27056516/" target="_blank">
                 <!-- LinkedIn icon -->
@@ -220,7 +227,9 @@
             </div>
           </div><!-- Closed column for Linkedin logo -->
 
-          <div class="column col-md-1 col-lg-1">
+          <div style="
+          display: inline-block;
+          ">
             <!-- Opens column for Behance logo -->
 
             <div> <a href="https://www.behance.net/chipwhite" target="_blank">

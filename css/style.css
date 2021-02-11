@@ -167,7 +167,6 @@ small,
   display: block;
   background-color: #0f4c81;
   color: #fff;
-
   /* needed to override the default link color */
   font-weight: 700;
   padding: 10px;
@@ -262,7 +261,6 @@ small,
 .btnresume:visited {
   background-color: #fff;
   color: #242424;
-
   /* needed to override the default link color */
   opacity: 0.8;
 }
@@ -306,28 +304,28 @@ header {
   max-width: 150px;
 }
 
-nav > ul {
+nav>ul {
   margin: 0;
   list-style-type: none;
   padding: 0;
 }
 
-nav > ul > li > a {
-  padding: 0 15px;
+nav>ul>li>a {
+  padding: 0 5px;
   text-transform: uppercase;
   font-weight: 700;
   color: #0f4c81;
 }
 
-nav > ul > li > a:visited {
+nav>ul>li>a:visited {
   color: #242424;
 }
 
-nav > ul > li > a:hover {
+nav>ul>li>a:hover {
   color: #638cc7;
 }
 
-nav > ul > li > a:active {
+nav>ul>li>a:active {
   color: #84898c;
 }
 
@@ -487,6 +485,14 @@ Medium devices (640px and larger)
     width: 8.33%;
   }
 
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
   .col-md-6 {
     width: 50%;
   }
@@ -518,7 +524,7 @@ Medium devices (640px and larger)
 Large devices (1024px and larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
@@ -532,6 +538,10 @@ Large devices (1024px and larger)
 
   .col-md-1 {
     width: 8.33%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
   }
 
   .col-lg-5 {
@@ -558,7 +568,7 @@ Large devices (1024px and larger)
 Extra Large devices (1440px and larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  nav > ul > li {
+  nav>ul>li {
     display: inline-block;
   }
 
